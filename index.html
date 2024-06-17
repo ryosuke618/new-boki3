@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>簿記勘定科目クイズ</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+        }
+        .container {
+            max-width: 600px;
+            margin: 0 auto;
+            text-align: center;
+            padding: 20px;
+        }
+        .question {
+            font-size: 1.2em;
+            margin-bottom: 20px;
+        }
+        .options button {
+            margin: 5px;
+            padding: 10px 20px;
+            font-size: 1em;
+        }
+        .result, .description {
+            margin-top: 20px;
+        }
+        .highlight {
+            background-color: yellow;
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <h1>簿記勘定科目クイズ</h1>
+        <div id="quiz"></div>
+        <button onclick="generateQuestions()">次の問題へ</button>
+        <div id="summary"></div>
+    </div>
+
+    <script src="quiz.js"></script>
+</body>
+</html>
